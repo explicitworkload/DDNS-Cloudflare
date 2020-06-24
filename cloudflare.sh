@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Dynamic DNS client for Cloudflare
-# Uses akamai to get your external IP address
+# Uses akamai to get your external IP address with multi-domain supported
 #
 # Replace text marked with "XXXXXXXXXXXX" with the relevant ZONEID, RECORDID and API TOKEN from Cloudflare API pages.
 # You will need to query cloudflare API for the DNS Record (ID) and also Zone ID is included, in order to update it below.
@@ -17,3 +17,5 @@ curl -X PUT "https://api.cloudflare.com/client/v4/zones/XXXXXXXXXXZONEIDXXXXXXXX
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"XXXXXXXSUBDOMAINXXXXXXXXXX","content":"'${ip}'","ttl":1,"proxied":false}'
 echo $ip
+
+# if you need multi domain, just copy the lines above and replicate it
