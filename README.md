@@ -1,5 +1,5 @@
 # Dynamic DNS client for Cloudflare
-# Uses Akamai to get your external IP address
+>> Uses Akamai to get your external IP address
 
 Need a bash script to run your Dynamic DNS updates 24x7? 
 
