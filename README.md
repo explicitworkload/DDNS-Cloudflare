@@ -1,7 +1,5 @@
 # Dynamic DNS client for Cloudflare
->> Uses Akamai to get your external IP address
-
-Need a bash script to run your Dynamic DNS updates 24x7? 
+Need a bash script to run your Dynamic DNS updates 24x7? This uses fastest Akamai to get your external IP address.
 
 1) This script checks your external IP address using Akamai (HTTP), and update CloudFlare directly you can also replace it with other checkers.
 2) I've written comments in the script to show you how to get your cloudflare zoneid / recordid / api token
